@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Soldiers info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    
+    .header {
+      padding: 10px;
+      text-align: center;
+      background: #ec7608;
+      color: rgb(15, 14, 14);
+    }
+    
+   
+    .header h1 {
+      font-size: 40px;
+    }
+    
+    
+    
+   
+    .main {   
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+    }
+    
+    
+    
+   
+    .footer {
+      padding: 40px;
+      text-align: center;
+      background: rgb(69, 214, 11);
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <h1>THE INDIAN ARMY</h1>
+    
+    </div>
+
+
+<div class="main">
+
+
+<div>
+<h2>SOLDIERS INFO:</h2>
+
+</div>
+        <% for(var i=0;!(i>=row.length);i++){ %>
+            <img src="clip.jpg" alt="1">
+            <h2>NAME: <%= row[i].name %></h2>
+            <h2>RANK: <%= row[i].rank %></h2>
+            <h2>CODE: <%= row[i].code_num %></h2>
+        <% } %>
+            
+</div>
+
+</div>
+
+<div class="footer">
+    
+</div>
+
+</body>
+</html>

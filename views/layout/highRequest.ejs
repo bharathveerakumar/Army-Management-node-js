@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Leave request</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #ec7608;
+  color: rgb(15, 14, 14);
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+
+
+.main {   
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: rgb(69, 214, 11);
+}
+.request{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>THE INDIAN ARMY</h1>
+
+</div>
+
+
+
+<div class="main">
+    <p><img src="C:\Users\bhuvan\Desktop\army\army management\html\pictures\miliatry flag.png" alt="The Indian Military Flag"></p>
+    <h2>Weapon Requests</h2>  
+    <% for(var i=0;!(i>=row.length);i++){ %>
+        <div class="request">
+          <h3>code: <%= row[i].code_num %></h3>
+          <h3>type: <%= row[i].weapon_type %></h3>
+          <h3>quantity: <%= row[i].quantity %></h3>
+          <a href="delete?code=<%= row[i].code_num %>&table=request">GRANTED</a>
+        </div>
+    <% } %>
+    <h2>leave Requests</h2>  
+    <% for(var i=0;!(i>=row1.length);i++){ %>
+        <div class="request">
+          <h3>code: <%= row1[i].code_num %></h3>
+          <h3>type: <%= row1[i].from_date %></h3>
+          <h3>quantity: <%= row1[i].to_date %></h3>
+          <a href="delete?code=<%= row1[i].code_num %>&table=leave_request">GRANTED</a>
+        </div>
+    <% } %>
+    <h2>Air Ambulance Requests</h2>  
+    <% for(var i=0;!(i>=row2.length);i++){ %>
+        <div class="request">
+          <h3>code: <%= row2[i].code_num %></h3>
+          <h3>type: <%= row2[i].location %></h3>
+          <a href="delete?code=<%= row2[i].code_num %>&table=air_ambulance">GRANTED</a>
+        </div>
+    <% } %>
+  </div>
+  
+
+
+<div class="footer">
+  
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weapon request</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #ec7608;
+  color: rgb(15, 14, 14);
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+
+
+.main {   
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: rgb(69, 214, 11);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>THE INDIAN ARMY</h1>
+
+</div>
+
+
+
+<div class="main">
+    <p><img src="C:\Users\bhuvan\Desktop\army\army management\html\pictures\f4ba5aee23bbe9d14a5211ac38ec591a.jpg" alt="The Indian Military Flag"></p>
+    <h2>Weapon Request Form:</h2>
+
+    <form action="request?type=weapon" method="POST" enctype="multipart/form-data">
+        <p style="text-align:center"><input class="w3-input w3-padding-16" type="text" placeholder="Code number" required name="Name"></p>
+        <p style="text-align:center"><input class="w3-input w3-padding-16" type="text" placeholder="GUN/EXPLOSIVES" required name="type"></p>
+        <p style="text-align:center"><input class="w3-input w3-padding-16" type="text" placeholder="MODEL: name/number" required name="Message1"></p>
+        <p style="text-align:center"><input class="w3-input w3-padding-16" type="number" placeholder="Number of Bullets" required name="quantity"></p>
+       
+        
+        <p style="text-align:center"><button class="w3-button w3-light-grey w3-section" type="submit">Request</button></p>
+        </form>
+    
+    
+  </div>
+  
+
+
+<div class="footer">
+  
+  
+</div>
+
+</body>
+</html>

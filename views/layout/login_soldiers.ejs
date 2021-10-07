@@ -1,0 +1,94 @@
+<!DOCTYPE html>    
+<html>    
+<head> 
+    <style>   
+       body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color: #c9ccc9 ;
+ 
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: blanchedalmond;  
+        border-radius: 15px ;  
+          
+}  
+h1{  
+    font-size: 50px;
+    text-align: center;  
+    color: black;  
+      
+}  
+label{  
+    color: green;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: black;  
+  
+  
+}  
+span{  
+    color: black;  
+    font-size: 17px; 
+     
+}  
+a{  
+    float: centre ;  
+    color: black;
+    background-color: grey;  
+}  
+    </style>
+    </head>>
+<body>    
+    <h1>SOLDIER LOGIN</h1><br> 
+    <p style="text-align:center"><img src="C:\Users\bhuvan\Desktop\army\army management\html\pictures\MIL.jpg" alt="BRIGADE"></p>
+    <div class="login">    
+    <form id="login" method="POST" action="dashboard_soldiers" enctype="multipart/form-data">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <button type="submit">Submit</button>       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+         <a href="#">Forgot Password</a> 
+</form> 
+</div> 
+</body>    
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "army_management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "multer": "^1.4.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "sql": "^0.78.0"
+  }
+}
